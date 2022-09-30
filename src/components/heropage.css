@@ -7,27 +7,20 @@
   justify-content: center;
   align-items: center;
 }
-
-.hero-section-container {
-  column-gap: 4rem;
-  margin: 1rem;
-}
-
 .flex-row-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hero-img-container {
-  border-radius: 1rem;
-  height: 18rem;
-  width: 30rem;
+
+.hero-section-container {
+  column-gap: 4rem;
+  margin: 1rem;
 }
-.hero-img {
-  border-radius: 1rem;
-  height: 100%;
-  object-fit: fill;
-  width: 100%;
+/* Text container styles */
+
+.hero-text-container {
+  align-items: center;
 }
 .hero-text {
   align-items: center;
@@ -35,11 +28,6 @@
   row-gap: 10px;
   width: 28rem;
 }
-
-.hero-text-container {
-  align-items: center;
-}
-
 .hero-text-header {
   font-family: "Poppins", sans-serif;
   font-size: 3rem;
@@ -82,4 +70,80 @@
   color: white;
   height: 3.2rem;
   width: 10.2rem;
+}
+/* Image container styles */
+
+.hero-img-container {
+  border-radius: 1rem;
+  height: 25rem;
+  width: 25rem;
+}
+.hero-img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+/* steps styles */
+
+.step-container {
+  padding-top: 100px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+}
+
+.steps-para {
+  padding-top: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Info container styles */
+
+.info-container {
+  margin-top: 100px;
+}
+
+.info-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  width: 30rem;
+  row-gap: 10px;
+  align-items: center;
+  padding-top: 15px;
+}
+/* upload btn style */
+input[type="file"]::file-selector-button {
+  align-items: center;
+  margin-right: 20px;
+  border: none;
+  background: red;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+/* waitlist styles */
+
+.waitlist-container {
+  margin-top: 25px;
+}
+
+.waitlist-text {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.mail-text {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
 }
