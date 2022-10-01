@@ -74,7 +74,7 @@
 /* Image container styles */
 
 .hero-img-container {
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   height: 25rem;
   width: 25rem;
 }
@@ -86,8 +86,8 @@
 /* steps styles */
 
 .step-container {
-  padding-top: 100px;
-  padding-left: 15px;
+  margin-top: 100px;
+  margin-left: 15px;
   display: flex;
   flex-direction: column;
   width: 60rem;
@@ -126,10 +126,6 @@ input[type="file"]::file-selector-button {
   color: white;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
-}
-
-input[type="file"]::file-selector-button:hover {
-  background: #0d45a5;
 }
 
 /* waitlist styles */

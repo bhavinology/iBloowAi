@@ -11,9 +11,9 @@ function Nav() {
           <img src={logo} className="logo" alt="iBloom.ai logo" />
         </Link>
       </div>
-      <div className="flex-row-center nav-right">
-        <button className="nav-btn text-white">Login</button>
-        <button className="nav-btn text-white">Sign up</button>
+      <div className="flex-row-center">
+        <button className="nav-btn ">Login</button>
+        <button className="nav-btn ">Sign up</button>
       </div>
     </nav>
   );

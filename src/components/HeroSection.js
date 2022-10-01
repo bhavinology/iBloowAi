@@ -1,7 +1,7 @@
 import React from "react";
 import "./heropage.css";
 import "../assets/images/hero1.png";
-// import { Link } from "react-router-dom";
+
 import hero1 from "../assets/images/hero1.png";
 
 function HeroSection() {
