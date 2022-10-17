@@ -12,8 +12,8 @@ function Nav() {
         </Link>
       </div>
       <div className="flex-row-center">
-        <button className="nav-btn ">Login</button>
-        <button className="nav-btn ">Sign up</button>
+        <button className="nav-btn login ">Login</button>
+        <button className="nav-btn signup">Sign up</button>
       </div>
     </nav>
   );
