@@ -11,7 +11,7 @@ function FileUpload() {
   console.log("data in data", data);
 
   function changeHandler(event) {
-    setData();
+    // setData();
     setErr(false);
     setFile(event.target.files[0]);
 
