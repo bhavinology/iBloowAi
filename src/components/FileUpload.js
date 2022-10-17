@@ -6,10 +6,13 @@ function FileUpload() {
   const [data, setData] = useState();
   const [err, setErr] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [process, setProcess] = useState(false);
   const [file, setFile] = useState();
   console.log("data in data", data);
 
   function changeHandler(event) {
+    setData();
+    setErr(false);
     setFile(event.target.files[0]);
 
     console.log("file in change handler", file);
@@ -18,6 +21,8 @@ function FileUpload() {
   const handleSubmission = async (e) => {
     try {
       //   e.preventDefault();
+      setLoading(false);
+      setProcess(true);
       console.log("file in submit fn", file);
       const formData = new FormData();
       formData.append("uploadfile", file);
@@ -38,9 +43,11 @@ function FileUpload() {
       setErr(false);
     } catch (error) {
       console.log(error.message);
+      setData();
       setErr(true);
     } finally {
-      setLoading(false);
+      // setLoading(false);
+      setProcess(false);
     }
   };
 
@@ -54,9 +61,9 @@ function FileUpload() {
           </button>
         </div>
       </div>
-      {/* <input type="file" onClick={postData}></input> */}
       <div className="data-display-container">
-        {loading && <div> A moment pls</div>}
+        {loading && <div> Upload File to get an output</div>}
+        {process && <div>Processing.. </div>}
         {err && <div>There is a problem fetching the post data</div>}
         {data && (
           <>

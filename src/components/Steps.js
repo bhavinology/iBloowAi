@@ -3,7 +3,6 @@ import "./steps.css";
 
 function Steps() {
   return (
-    // <div className="flex-column">
     <div className="step-container">
       <p className="steps-para">
         Step 1: Download iBloom app &amp; buy DilDost personal home heart sound
@@ -19,7 +18,6 @@ function Steps() {
         doctor on Whatsapp,SMS,email or platforms like TATA 1mg
       </p>
     </div>
-    // </div>
   );
 }
 

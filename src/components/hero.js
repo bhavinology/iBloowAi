@@ -6,7 +6,6 @@ import hero1 from "../assets/images/hero1.png";
 
 function Hero() {
   return (
-    // <div className="flex-column">
     <div className="hero-section-container flex-row-center">
       <div className="hero-img-container">
         <img src={hero1} className="hero-img" alt="hero-img" />
@@ -25,7 +24,6 @@ function Hero() {
         </div>
       </div>
     </div>
-    // </div>
   );
 }
 
