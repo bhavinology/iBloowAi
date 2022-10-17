@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   background-color: white;
-  height: 4rem;
+  height: 6.5rem;
   position: sticky;
   top: 0;
 }
 
 .logo-container {
-  height: 8rem;
+  height: 6.5rem;
   width: 8rem;
 }
 
