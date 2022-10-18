@@ -11,10 +11,10 @@ function FileUpload() {
   console.log("data in data", data);
 
   function changeHandler(event) {
-    if (data) {
-      setData();
-    }
-    setErr(false);
+    // if (data) {
+    //   setData();
+    // }
+    // setErr(false);
     setFile(event.target.files[0]);
 
     console.log("file in change handler", file);
